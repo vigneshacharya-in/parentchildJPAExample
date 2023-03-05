@@ -40,7 +40,7 @@ public class Person {
     @Setter
     private Person parent;
 
-    @OneToMany(fetch = FetchType.LAZY,mappedBy = "parent")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "parent")
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @Setter
     private Set<Person> children;
